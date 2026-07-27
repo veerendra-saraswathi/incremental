@@ -1,0 +1,18 @@
+anomaly_detection:
+  primary_model: "half_space_trees"
+  fallback_model: "online_isolation_forest"
+
+  half_space_trees:
+    n_trees: 30
+    height: 8
+    window_size: 250
+
+  autoencoder:
+    latent_dim: 16
+    hidden_dims: [64, 32]
+    learning_rate: 0.001
+
+root_cause:
+  method: "zscore"            # later: shap, attention, residual
+  top_k: 5
+  

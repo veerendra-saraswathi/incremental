@@ -1,0 +1,27 @@
+# Core scientific stack
+numpy>=1.26,<2.1
+pandas>=2.1,<2.3
+polars>=1.0
+scipy>=1.11,<1.15
+scikit-learn>=1.4,<1.6
+
+# Incremental / Online Learning
+river>=0.21.0,<0.22
+
+# Deep Learning (optional but useful)
+torch>=2.2,<2.5
+
+# Config & utilities
+pyyaml>=6.0
+rich>=13.7
+tqdm>=4.66
+pydantic>=2.5
+loguru>=0.7
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+streamlit>=1.32
+
+# Testing
+pytest>=8.0

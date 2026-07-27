@@ -1,0 +1,52 @@
+{
+  "duration_s": 180.0,
+  "subsystems": {
+    "imu": {
+      "freq_hz": 100,
+      "anomalies": [
+        [
+          45.0,
+          52.0,
+          "spike",
+          1
+        ],
+        [
+          110.0,
+          125.0,
+          "drift",
+          0
+        ]
+      ]
+    },
+    "actuator": {
+      "freq_hz": 50,
+      "anomalies": [
+        [
+          70.0,
+          78.0,
+          "bias",
+          2
+        ]
+      ]
+    },
+    "fms": {
+      "freq_hz": 20,
+      "anomalies": [
+        [
+          95.0,
+          105.0,
+          "noise",
+          0
+        ]
+      ]
+    },
+    "guidance": {
+      "freq_hz": 10,
+      "anomalies": []
+    },
+    "telemetry": {
+      "freq_hz": 5,
+      "anomalies": []
+    }
+  }
+}

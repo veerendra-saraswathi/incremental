@@ -1,0 +1,28 @@
+project:
+  name: incremental-hils
+  mode: development
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  synchronized_dir: data/synchronized
+  sample_rate_ms: 10          # common grid
+  window_size: 50
+  stride: 10
+
+model:
+  type: half_space_trees      # later: autoencoder, river_hst, etc.
+  n_trees: 30
+  height: 8
+  warmup_samples: 300
+  anomaly_threshold_percentile: 95
+
+training:
+  batch_size: 64
+  learning_rate: 1.0e-3
+  max_epochs: 50
+
+logging:
+  level: DEBUG
+  save_dir: outputs/logs
+  
